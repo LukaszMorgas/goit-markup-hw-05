@@ -66,6 +66,7 @@ header {
   color: var(--maincolor);
   text-decoration: none;
   display: block;
+  position: relative;
 }
 .header-contacts {
   display: flex;
@@ -391,7 +392,7 @@ h4 a {
 .social-item:focus {
   fill: var(--white);
   background: var(--secondcolor);
-  cursor: pointer;
+  cursor: var(--hoovercursor);
 }
 .clients-list {
   display: flex;
@@ -416,7 +417,7 @@ h4 a {
 .clientlogo:focus {
   fill: var(--secondcolor);
   border-color: var(--secondcolor);
-  cursor: pointer;
+  cursor: var(--hoovercursor);
 }
 .container-footer {
   display: flex;
@@ -450,5 +451,32 @@ h4 a {
 .joinus-sociallist:hover,
 .joinus-sociallist:focus {
   background: var(--secondcolor);
-  cursor: pointer;
+  cursor: var(--hoovercursor);
+}
+
+.active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 45px;
+  width: 100%;
+  height: 4px;
+  background: var(--secondcolor);
+  border-radius: 2px;
+}
+.whatwedo-task {
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 70px;
+  top: 1435px;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--fontW7);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(47, 48, 58, 0.8);
 }
