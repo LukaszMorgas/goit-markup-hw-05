@@ -81,7 +81,14 @@
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         </div>
-        <button class="orderservice" type="button">Zamów usługę</button>
+        <button class="orderservice" type="button" data-modal-open>
+          Zamów usługę
+        </button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-btn" type="button" data-modal-close>X</button>
+        </div>
       </div>
       <!-- edn głowny banner -->
       <!-- pierwsz sekcja -->
@@ -385,7 +392,7 @@
           </div>
         </section>
         <section class="joinus-section">
-          <p class="joinus">Dołącz do nas</p>
+          <h4 class="joinus">Dołącz do nas</h4>
           <ul class="joinus-social">
             <li class="joinus-sociallist">
               <svg width="20" height="20">
@@ -411,6 +418,6 @@
         </section>
       </div>
     </footer>
-    <script src="./js/modal.js"></script
+    <script src="./modal.js"></script>
   </body>
 </html>
