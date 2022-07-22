@@ -365,6 +365,7 @@ h4 a {
   margin: 15px;
   overflow: hidden;
   position: relative;
+  background-color: var(--white);
 }
 .icon {
   display: inline-block;
@@ -527,23 +528,23 @@ h4 a {
 }
 .portfolio-ovarlay {
   position: absolute;
-  top: 0;
+  bottom: 110px;
+  /* top: 20px; */
   left: 0;
+  right: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  transition: transform 250ms ease;
+  height: 0%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* overflow: hidden; */
 }
-.portfolio-ovarlay > p {
+.portfolio-ovarlay-desc {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--white);
+ padding: 50px 40px 50px 25px;
 }
-.portoflio-list:hover .portfolio-ovarlay {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transform: translatex(0);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+.portfolio-list:hover .portfolio-ovarlay {
+  height: 75%;
 }
