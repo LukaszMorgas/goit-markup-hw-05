@@ -122,7 +122,8 @@ h1 {
   background-color: var(--secondcolor);
   color: var(--white);
   /* text-align: center; */
-  /* border-radius: 4px; */
+  border-radius: 4px;
+  border: none;
 }
 .orderservice:hover {
   cursor: var(--hoovercursor);
@@ -276,6 +277,7 @@ address {
   color: var(--white);
   font-style: normal;
 }
+
 .footercontact {
   font-size: 14px;
   line-height: 1.71;
